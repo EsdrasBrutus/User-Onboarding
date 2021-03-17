@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from './Card'
+import '../App.css';
 
 const Form = (props) =>{
 
@@ -30,6 +31,12 @@ const Form = (props) =>{
         <form className='form container' onSubmit={onSubmit}>
             <Card className='form-group submit'>
                 <h2>Add a User</h2>
+                <div className='errors'>
+                    <div>{errors.username}</div>
+                    <div>{errors.email}</div>
+                    <div>{errors.password}</div>
+                    <div>{errors.TermsOfService}</div>
+                </div>
 
                 <label>Username&nbsp;
                     <input

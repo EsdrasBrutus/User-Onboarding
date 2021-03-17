@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
 }
 
 .App-logo {
@@ -35,4 +39,18 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.form{
+  width: 20em;
+}
+
+.users{
+  display: flex;
+  width: 20em;
+  flex-flow: row wrap;
+}
+
+.errors{
+  color:red;
 }

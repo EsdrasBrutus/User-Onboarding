@@ -4,7 +4,7 @@ const formSchema = yup.object().shape({
     username: yup
         .string()
         .trim()
-        .required('Username is required, please fill out.')
+        .required('Username is required')
         .min(3, 'Username must be 3 characters long'),
     email: yup
         .string()
@@ -13,7 +13,7 @@ const formSchema = yup.object().shape({
     password: yup
         .string()
         .trim()
-        .required('Password is required, please fill out.')
+        .required('Password is required')
         .min(3, 'Password must be 3 characters long'),
     TermsOfService: yup
         .boolean()
